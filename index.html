@@ -452,12 +452,12 @@
 						Isi identitas anda terlebih dahulu
 					</div>
 					<div class="mycontent">
-						Tekan tombol merah untuk reset nama.<br><br>
+						Yang Lengkap Yah.<br><br>
 						Nama :
 						<input class="mytext" type="text" id="mynama" name="nama">
 					</div>
 					<div class="mybutton">
-						<div class="mybuttonyes" onclick="mywrite()">oke</div>
+						<div class="mybuttonyes" onclick="mywrite()">OKE</div>
 					</div>
 				</div>	
 			</div>
@@ -468,11 +468,11 @@
 					<div class="mymax"></div>
 				</div>
 				<div class="myheader" id="mywindowheader">
-					halo <span id="spannama"></span>
+					Hai kamu mau Mie Ayam? <span id="spannama"></span>
 				</div>
 				<div class="mybody">
 					<div class="mytitle">
-						Aku sejak lama suka padamu.
+						Aku Sejak Lama Suka Pada Mu.
 					</div>
 					<div class="mycontent">
 						Maukah kau menjadi orang yang selalu ada disisiku, yang selalu ada disaat senang ataupun susah, yang selalu ada sampai akhir hayatku?
@@ -502,22 +502,7 @@
 			$(window).on('load',function(){
 				$('.preload').css('background','#00000000').css('color','#FFFFFF00').css('backdrop-filter','blur(0px)').text('SELESAI').css('z-index','-2');
 			});
-	  		function init(){
-	  			startTime();
-	  			stopOpening();
-	  			add='<div class="cc">copyright Andika Sujanadi @2020</div>';
-	  			$('body').append(add);
-	  			if(localStorage.getItem("nama") != null && localStorage.getItem("checked") == "yoi"){
-		  			namaku=localStorage.getItem("nama");
-		  			myclock();
-		  		}else if(localStorage.getItem("nama") != null){
-		  			mystart();
-		  		}
-		  		if(localStorage.getItem("blur")=="true"){
-		  			wpblur();
-		  		}
-
-	  		}
+	  		
 	  		$('img').on('dragstart', function(event) { event.preventDefault(); });
 	  		dragElement(document.getElementById("mywindow"));
 			function dragElement(elmnt) {
